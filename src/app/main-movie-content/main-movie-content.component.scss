@@ -1,0 +1,24 @@
+/* main-movie-content.component.scss */
+
+.main-movie-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+.movie-item {
+    width: calc(100% / 7 - 1rem);  /* 6 items in a row, minus 1rem for spacing */
+    margin-bottom: 1rem;
+    padding: 0.5rem; /* Add padding to create space around the movie item */
+    font-size:12px;
+    /* Add additional styles as needed to format movie items */
+}
+  
+/* main-movie-content.component.scss */
+
+.movie-poster {
+    width: 169px; /* Set the width to the desired size */
+    height: 250px; /* Set the height to the desired size */
+    object-fit: cover; /* Preserve aspect ratio and cover the container */
+}
+  

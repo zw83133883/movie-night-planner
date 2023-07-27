@@ -1,0 +1,101 @@
+// Define variables for colors
+$primary-color: #1e1e1e;
+$secondary-color: #ffffff;
+$accent-color: #3ea6ff;
+$gradient-start: #1e1e1e;
+$gradient-middle: #606060;
+$gradient-end: #1e1e1e;
+$navBarHeight: 40px;
+
+// Define a mixin for button styles
+@mixin button-style {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    color: $secondary-color;
+    background-color: $accent-color;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($accent-color, 10%);
+    }
+}
+
+// Styles for the nav-bar
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $navBarHeight;
+    z-index: 999; // Ensure it stays on top
+
+    background: linear-gradient(to right, $gradient-start, $gradient-middle, $gradient-end);
+    background-repeat: no-repeat;
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: 0.3rem;
+
+    opacity: 0.9; // Make it a little transparent
+    transition: height 0.3s ease-in-out; // Add transition for height change
+
+    display: flex;
+    align-items: center;
+
+    .logo {
+        font-size: 1.0rem;
+        margin-right: auto;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        margin-right: 2rem;
+
+        li {
+            a {
+                text-decoration: none;
+                color: $secondary-color;
+                font-size: 1rem;
+                padding: 0.5rem 1rem;
+
+                &:hover {
+                    background-color: darken($primary-color, 5%);
+                }
+            }
+        }
+    }
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+
+        input[type="text"] {
+            padding: 0.5rem;
+            border: 1px solid $secondary-color;
+            border-radius: 3px;
+            outline: none;
+            color: $secondary-color;
+            background-color: transparent;
+        }
+
+        button {
+            @include button-style;
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+// Add styles for creating space around nav-bar at the top of the page
+body {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+// Add styles for filling up space when user scrolls down
+.content {
+    margin-top: $navBarHeight;
+    // Add your content styles here
+}
