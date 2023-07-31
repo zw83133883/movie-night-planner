@@ -1,0 +1,30 @@
+.sidebar {
+    background-color: #1A1A1A !important;
+    color: #fff;
+    width: 250px;
+    height: 100%;
+    margin-top: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav li {
+    padding: 10px 20px;
+}
+
+.sidebar-nav li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar-nav li a:hover {
+    background-color: #555;
+}

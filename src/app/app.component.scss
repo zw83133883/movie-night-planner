@@ -1,0 +1,35 @@
+$navBarHeight: 60px;
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    // background-color: #1e1e1e;
+    min-height: 100vh;
+}
+
+
+.toolbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.content{
+    margin-left:200px;
+}
+
+
+/* Rest of the styles remain the same as before */

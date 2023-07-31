@@ -1,0 +1,7 @@
+<div class="home-content">
+    <div *ngFor="let movie of movies" class="movie-item">
+      <img [src]="movie.primaryImage.url" alt="{{ movie.originalTitleText.text }}" class="movie-poster">
+      <h2>{{ movie.originalTitleText.text }}</h2>
+    </div>
+</div>
+  

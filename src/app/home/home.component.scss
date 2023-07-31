@@ -1,0 +1,43 @@
+// home-component.scss
+
+:host {
+    display: block;
+    background-color: #1e1e1e;
+    /* Dark grey background color */
+    color: #ffffff;
+    /* White text color */
+    padding: 2rem;
+    margin: 1rem;
+    flex: 1;
+    /* Allow the Home page to expand and fill the remaining vertical space */
+}
+
+.home-content {
+    height: 100%;
+    width: 100%;
+    /* Adjust the width based on the desired size and spacing */
+    margin-right: 1rem;
+    /* Add spacing between Home page and side-bar */
+    background-color: #1e1e1e;
+    /* Set the background color to dark grey */
+    display: flex;
+    flex-wrap: wrap;
+    /* Remove justify-content: space-between; to allow the items to wrap */
+}
+
+.movie-item {
+    width: calc(16.66667% - 0.6rem);
+    /* Adjust the width to fit 6 items in a row with spacing */
+    height: 500px;
+    padding: 0.5rem;
+    /* Add padding to create space around the movie item */
+    /* Add additional styles as needed to format movie items */
+}
+
+.movie-poster {
+    width: 100%;
+    height: 70%;
+    /* Adjust the desired height of the movie poster */
+    object-fit: cover;
+    /* Preserve aspect ratio and cover the container */
+}

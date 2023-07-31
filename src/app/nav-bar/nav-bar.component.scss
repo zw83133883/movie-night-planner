@@ -1,5 +1,5 @@
 // Define variables for colors
-$primary-color: #1e1e1e;
+$primary-color: #0C0C0C;
 $secondary-color: #ffffff;
 $accent-color: #3ea6ff;
 $gradient-start: #1e1e1e;
@@ -28,9 +28,11 @@ $navBarHeight: 40px;
     left: 0;
     width: 100%;
     height: $navBarHeight;
+    margin: 8px;
     z-index: 999; // Ensure it stays on top
 
-    background: linear-gradient(to right, $gradient-start, $gradient-middle, $gradient-end);
+    // background: linear-gradient(to right, $gradient-start, $gradient-middle, $gradient-end);
+    background: $primary-color;
     background-repeat: no-repeat;
     background-color: $primary-color;
     color: $secondary-color;
@@ -94,8 +96,4 @@ body {
     padding-bottom: 10px;
 }
 
-// Add styles for filling up space when user scrolls down
-.content {
-    margin-top: $navBarHeight;
-    // Add your content styles here
-}
+

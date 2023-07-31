@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+html{
+    background-color: #1e1e1e;
+}
+
+/* custom-scrollbar.scss */
+
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+  
+/* Style the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+  

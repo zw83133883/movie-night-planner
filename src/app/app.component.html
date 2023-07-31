@@ -1,4 +1,10 @@
-<div class="toolbar" role="banner">
-  <app-nav-bar></app-nav-bar>
+<div class="app-container">
+  <div class="toolbar" role="banner">
+    <app-nav-bar></app-nav-bar>
+  </div>
+  <div class="content">
+    <app-side-bar></app-side-bar>
+    <router-outlet></router-outlet>
+  </div>
 </div>
-<app-main-movie-content></app-main-movie-content>
+

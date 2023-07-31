@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 
 @Component({
-  selector: 'app-main-movie-content',
-  templateUrl: './main-movie-content.component.html',
-  styleUrls: ['./main-movie-content.component.scss'],
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
-export class MainMovieContentComponent implements OnInit {
+export class HomeComponent implements OnInit {
   movies: any[] = []; // Initialize as an empty array
 
   constructor(private http: HttpClient) {}
