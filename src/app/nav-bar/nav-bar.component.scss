@@ -13,11 +13,12 @@ $navBarHeight: 40px;
     border: none;
     border-radius: 3px;
     color: $secondary-color;
-    background-color: $accent-color;
+    background-color: $primary-color;
     cursor: pointer;
 
     &:hover {
-        background-color: darken($accent-color, 10%);
+        background-color: darken($primary-color, 20%);
+        color: $secondary-color;
     }
 }
 
@@ -46,7 +47,7 @@ $navBarHeight: 40px;
 
     .logo {
         font-size: 1.0rem;
-        margin-right: auto;
+        // margin-right: auto;
     }
 
     .nav-links {
@@ -87,6 +88,10 @@ $navBarHeight: 40px;
             margin-left: 0.5rem;
         }
     }
+}
+
+.menu-button{
+    @include button-style();
 }
 
 // Add styles for creating space around nav-bar at the top of the page

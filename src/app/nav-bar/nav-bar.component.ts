@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { SideBarService } from '../side-bar-service.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent {
-
+  constructor(private sideBarService : SideBarService) {}
+  onMenuClick(): void{
+    this.sideBarService.toggleSideBar();
+  }
 }

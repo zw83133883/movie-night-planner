@@ -7,6 +7,8 @@
     position: fixed;
     top: 0;
     left: 0;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
 }
 
 .sidebar-nav {
@@ -28,3 +30,36 @@
 .sidebar-nav li a:hover {
     background-color: #555;
 }
+/* Define the animations */
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Apply the animations to the side-bar */
+  .side-bar {
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+  }
+  
+  .open {
+    animation-name: slideIn;
+  }
+  
+  .closed {
+    animation-name: slideOut;
+  }
+  
