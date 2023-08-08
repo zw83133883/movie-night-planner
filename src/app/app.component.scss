@@ -1,4 +1,5 @@
 $navBarHeight: 60px;
+
 body,
 html {
     height: 100%;
@@ -27,8 +28,12 @@ html {
     z-index: 999;
 }
 
-.content{
-    margin-left:200px;
+.content {
+    margin-left: 200px;
+}
+
+.content-collapsed {
+    margin-left: 0; // Or any other styles you want to apply when the sidebar is collapsed
 }
 
 

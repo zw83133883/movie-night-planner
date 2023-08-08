@@ -29,6 +29,9 @@ export class SideBarComponent implements OnInit{
   constructor(private sideBarService : SideBarService) { }
 
   ngOnInit() {
-    this.isOpen = this.sideBarService.isSideBarOpen();
+    this.sideBarService.isOpen$.subscribe(isOpen => {
+      this.isOpen = isOpen;
+      console.log(this.isOpen);
+    });
   }
 }

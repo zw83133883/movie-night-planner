@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { SideBarService } from '../side-bar-service.service';
 
 @Component({
@@ -10,5 +10,6 @@ export class NavBarComponent {
   constructor(private sideBarService : SideBarService) {}
   onMenuClick(): void{
     this.sideBarService.toggleSideBar();
+    console.log("cicked");
   }
 }

@@ -1,4 +1,4 @@
-.sidebar {
+.side-bar-container {
     background-color: #1A1A1A !important;
     color: #fff;
     width: 250px;
@@ -30,36 +30,38 @@
 .sidebar-nav li a:hover {
     background-color: #555;
 }
+
 /* Define the animations */
 @keyframes slideIn {
     from {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
+
     to {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  }
-  
-  @keyframes slideOut {
+}
+
+@keyframes slideOut {
     from {
-      transform: translateX(0);
+        transform: translateX(0);
     }
+
     to {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
-  }
-  
-  /* Apply the animations to the side-bar */
-  .side-bar {
+}
+
+/* Apply the animations to the side-bar */
+.side-bar {
     animation-duration: 0.3s;
     animation-fill-mode: both;
-  }
-  
-  .open {
+}
+
+.open {
     animation-name: slideIn;
-  }
-  
-  .closed {
+}
+
+.closed {
     animation-name: slideOut;
-  }
-  
+}

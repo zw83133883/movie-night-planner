@@ -1,9 +1,9 @@
 <div class="app-container">
   <div class="toolbar" role="banner">
     <app-nav-bar></app-nav-bar>
-  </div>
-  <div class="content">
     <app-side-bar></app-side-bar>
+  </div>
+  <div class="content" [ngClass]="{ 'content-collapsed': !isOpen }">
     <router-outlet></router-outlet>
   </div>
 </div>
